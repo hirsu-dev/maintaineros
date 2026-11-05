@@ -64,3 +64,16 @@ python -m build
 ```
 
 See [contributing](CONTRIBUTING.md), [architecture](docs/architecture.md), and [roadmap](docs/roadmap.md). This project uses the MIT license.
+
+
+## Build note: A missing issue is not necessarily a closed issue.
+
+A repository can have a long issue list without a clear next task. MaintainerOS turns a bounded activity snapshot into a local queue, with the evidence behind each suggestion.
+
+Store the capture policy with each snapshot instead of rescoring old history after a settings change. A comparison can then explain when its two scores were produced under different rules.
+
+22 pytest checks passed on Windows, Python 3.12.14 and SQLite 3.53.1 on November 5, 2026. Network behavior is mocked in the automated tests.
+
+Next: Try the queue against real maintainer workflows and check whether the suggested tasks are useful. Large and rate-limited repositories still need broader evaluation.
+
+[Read the tradeoff, evidence, and reproduction steps](docs/build-note.md).

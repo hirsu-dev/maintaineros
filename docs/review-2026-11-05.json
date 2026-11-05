@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-05",
+  "source_commit": "fb1a2b68e30dde5b1879ace5c2c8c55f833b662e",
+  "environment": {
+    "os": "Windows",
+    "runtime": "Python 3.12.14; SQLite 3.53.1"
+  },
+  "command": "python -m pytest -q",
+  "passed": 22,
+  "skipped": 0,
+  "limitations": "The score is a transparent heuristic. The screenshot contains fictional demo projects; it is not evidence of real maintainers using the app."
+}
