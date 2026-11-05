@@ -6,6 +6,7 @@ from pathlib import Path
 
 from .models import ActionUpdate, RepositorySnapshot, TriagePolicy
 
+
 class Store:
     def __init__(self, path: str | Path):
         self.path = Path(path)

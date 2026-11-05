@@ -7,8 +7,10 @@ import httpx
 
 from .models import RepositorySnapshot, TriagePolicy, WorkItem
 
+
 class ImportFailure(Exception):
     pass
+
 
 class GitHubAdapter:
     def __init__(self, token: str | None = None, transport=None):
@@ -28,7 +30,7 @@ class GitHubAdapter:
         if allow_missing and response.status_code == 404:
             return None
         if response.status_code == 409 and path.endswith("/commits"):
-            return []  
+            return []
         if response.status_code in (403, 429):
             raise ImportFailure(
                 "GitHub rate limit or access restriction. Try later or configure a server-side GITHUB_TOKEN."
